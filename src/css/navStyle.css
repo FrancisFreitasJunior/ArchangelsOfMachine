@@ -1,0 +1,139 @@
+header {
+    background-color: #000000;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    width: 100%;
+    max-width: 1920px;
+    box-sizing: content-box;
+}
+
+header nav ul {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.logo {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.navLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 12px;
+    box-sizing: border-box;
+}
+
+.navLinks li a {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: 2px dashed white;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 1px #000, 0 0 4px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navLinks li a:hover {
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0 0 8px white;
+}
+
+/* Ícone do menu hamburguer */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    align-items: end;
+}
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative; /* necessário para o .navLinks absoluto */
+    }
+
+    header nav {
+        padding: 0;
+        margin-top: 12px;
+    }
+
+    header nav ul {
+        padding: 12px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navLinks {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #000;
+        z-index: 999;
+        padding: 12px 0;
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        padding: 12px;
+    }
+
+    .navLinks.show {
+        display: flex;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .navLinks li a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 10px 16px;
+    }
+
+    .navLinks li a:hover {
+        background-color: white;
+        color: black;
+        border-style: none;
+        border-color: none;
+        box-shadow: none;
+    }
+}

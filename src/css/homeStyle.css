@@ -1,0 +1,73 @@
+.hero-section {
+    background-image: url('../img/BikerTerco.png');
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    max-width: 1920px;
+    padding: 20px;
+    -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+    mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 800px;
+}
+
+.mc-logo {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.hero-slogan {
+    font-size: 24px;
+    line-height: 1.6;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.section-home img {
+    width: 45%;
+    max-width: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.section-home div {
+    width: 45%;
+    max-width: 600px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}

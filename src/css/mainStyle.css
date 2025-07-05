@@ -1,0 +1,29 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+body, p, a, li {
+    font-family: 'Montserrat', sans-serif;
+}
