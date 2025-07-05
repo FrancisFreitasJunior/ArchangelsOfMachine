@@ -53,7 +53,12 @@
     gap: 40px;
     padding: 40px 20px;
     flex-wrap: wrap;
-    color: white;
+    color: black;
+    background-color: white;
+}
+
+.section-home h2 {
+    margin: 0;
 }
 
 .section-home img {
@@ -66,8 +71,71 @@
 .section-home div {
     width: 45%;
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
 }
 
 .reverse {
     flex-direction: row-reverse;
+}
+
+.section-lead {
+    background-color: black;
+    color: white;
+}
+
+.section-lead h2 {
+    text-align: center;
+}
+
+.section-home div .btn-link {
+    align-self: center;
+}
+
+.section-home div img {
+    align-self: center;
+}
+
+.site-footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.site-footer a {
+    color: #d6ad60;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-home img,
+    .section-home div {
+        width: 80%;
+    }
+
+
+    section.reverse {
+        flex-direction: column;
+    }
+
+    section img,
+    section div {
+        width: 100%;
+    }
 }
