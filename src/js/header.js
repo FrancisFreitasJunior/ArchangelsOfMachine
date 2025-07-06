@@ -6,9 +6,9 @@ const headerHTML = `
             <div class="logo">ARCHANGES OF MACHINE</div>
             <ul class="navLinks">
                 <li><a class="btn-link" href="index.html">HOME</a></li>
-                <li><a class="btn-link" href="sobre.html">SOBRE</a></li>
-                <li><a class="btn-link" href="eventos.html">EVENTOS</a></li>
-                <li><a class="btn-link" href="contato.html">CONTATO</a></li>
+                <li><a class="btn-link" href="aboutus.html">SOBRE</a></li>
+                <li><a class="btn-link" href="event.html">EVENTOS</a></li>
+                <li><a class="btn-link" href="contact.html">CONTATO</a></li>
             </ul>
         </nav>
 `;

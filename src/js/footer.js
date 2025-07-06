@@ -1,6 +1,6 @@
 const footerHTML = `
         <p>
-            MAPA Unicesumar 2025 by
+            MAPA UniCesumar 2025 by
             <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">
                 Francis de Freitas Junior
             </a>

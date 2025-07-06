@@ -96,28 +96,6 @@
     align-self: center;
 }
 
-.site-footer {
-    background-color: #111;
-    color: #ccc;
-    text-align: center;
-    padding: 10px 10px;
-    font-size: 14px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.site-footer a {
-    color: #d6ad60;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.site-footer a:hover {
-    color: #fff;
-}
-
-
 @media (max-width: 768px) {
     section {
         flex-direction: column;

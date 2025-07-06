@@ -1,0 +1,52 @@
+section {
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+}
+
+.container-about-us {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container-about-us img {
+    width: 45%;
+    max-width: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+
+.container-about-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container-about-us p,
+.container-about-us h4 {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.container-about-us ul {
+    padding: 0px 20px;
+    list-style: none;
+}
+
+.container-about-us ul li {
+    padding-bottom: 8px;
+}
+
+.icone-cruz {
+    font-size: 20px;
+    font-weight:bolder;
+    padding-right: 4px;
+}
