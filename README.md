@@ -32,7 +32,7 @@ O objetivo do site é promover uma comunidade unida por meio de ações de carid
 
 ## Hospedagem
 
-[Link para Hospedagem](https://archanges-of-machine.vercel.app/index.html)
+[Link da Hospedagem](https://archanges-of-machine.vercel.app/index.html)
 
 ## Observações
 
