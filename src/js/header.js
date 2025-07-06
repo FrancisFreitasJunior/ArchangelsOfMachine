@@ -1,4 +1,5 @@
-const headerHTML = `
+document.addEventListener('DOMContentLoaded', () => {
+    const headerHTML = `
         <div class="menu-toggle" id="menu-toggle">
             ☰
         </div>
@@ -11,10 +12,17 @@ const headerHTML = `
                 <li><a class="btn-link" href="contact.html">CONTATO</a></li>
             </ul>
         </nav>
-`;
+    `;
 
-function loadHeader() {
-    document.getElementById('main-header').innerHTML = headerHTML;
-}
+    // Carrega o conteúdo do header
+    const header = document.getElementById('main-header');
+    header.innerHTML = headerHTML;
 
-window.addEventListener('DOMContentLoaded', loadHeader);
+    // Agora sim, adiciona o evento do botão hamburguer
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.navLinks');
+
+    toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+});

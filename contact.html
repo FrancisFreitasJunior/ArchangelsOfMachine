@@ -15,9 +15,86 @@
 
 <body>
     <header id="main-header"></header>
+    <main>
+        <section class="contato">
+            <h2 class="contato-titulo">Entre em contato</h2>
+
+            <div class="opcoes-iniciais">
+                <button class="botao-opcao" onclick="mostrarFormulario('mc')">Juntar-se ao MC</button>
+                <button class="botao-opcao" onclick="mostrarFormulario('evento')">Informações sobre evento</button>
+            </div>
+
+            <div id="form-mc" class="formulario oculto">
+                <h3>Quero fazer parte do MC</h3>
+                <form>
+                    <label>Nome completo:</label>
+                    <input type="text" required>
+
+                    <label>Cidade / UF:</label>
+                    <input type="text" required>
+
+                    <label>Telefone:</label>
+                    <input type="tel" required>
+
+                    <label>Email:</label>
+                    <input type="email" required>
+
+                    <label>Você é católico?</label>
+                    <select id="catolico-select" onchange="mostrarCatolicoExtra(this)">
+                        <option value="">Selecione</option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+
+                    <div id="catolico-extra" class="oculto">
+                        <label>Paróquia:</label>
+                        <input type="text">
+
+                        <label>Sacramentos recebidos:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox"> Batismo</label>
+                            <label><input type="checkbox"> Eucaristia</label>
+                            <label><input type="checkbox"> Crisma</label>
+                            <label><input type="checkbox"> Matrimônio</label>
+                        </div>
+
+                        <label>Pastorais ou movimentos que participa:</label>
+                        <textarea rows="3"></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <div id="form-evento" class="formulario oculto">
+                <h3>Quero saber sobre eventos</h3>
+                <form>
+                    <label>Evento de interesse:</label>
+                    <select required>
+                        <option value="">Selecione</option>
+                        <option>Missão São Francisco</option>
+                        <option>Terço Noturno sobre Rodas</option>
+                        <option>Encontro dos Arcanjos</option>
+                        <option>Serviço de Altar sobre Rodas</option>
+                    </select>
+
+                    <label>Nome completo:</label>
+                    <input type="text" required>
+
+                    <label>Email:</label>
+                    <input type="email" required>
+
+                    <label>Telefone:</label>
+                    <input type="tel">
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
     <footer class="site-footer" id="main-footer"></footer>
 
-    <script src="./src/js/scriptNav.js"></script>
     <script src="./src/js/header.js"></script>
     <script src="./src/js/footer.js"></script>
 </body>
