@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const headerHTML = `
-        <div class="menu-toggle" id="menu-toggle">
-            ☰
-        </div>
         <nav class="nav-bar">
             <div class="logo">ARCHANGES OF MACHINE</div>
             <ul class="navLinks">
@@ -11,6 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li><a class="btn-link" href="event.html">EVENTOS</a></li>
                 <li><a class="btn-link" href="contact.html">CONTATO</a></li>
             </ul>
+            <div class="menu-toggle" id="menu-toggle">
+            ☰
+            </div>
         </nav>
     `;
 
