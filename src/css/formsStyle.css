@@ -148,3 +148,15 @@ form {
     border-style: solid;
     box-shadow: 0 0 8px white;
 }
+
+input.erro {
+    border: 2px solid red;
+    background-color: #ffe5e5;
+    color: red;
+}
+
+input.valido {
+    border: 2px solid green;
+    background-color: #eaffea;
+    color: green;
+}
