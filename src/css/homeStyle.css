@@ -1,3 +1,7 @@
+main {
+    padding-top: 0;
+}
+
 .hero-section {
     background-image: url('../img/BikerTerco.png');
     background-size: cover;
@@ -86,6 +90,7 @@
 
 .section-lead h2 {
     text-align: center;
+    margin-top: 16px;
 }
 
 .section-home div .btn-link {

@@ -1,10 +1,11 @@
 body {
+    height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #000000;
     box-sizing: border-box;
@@ -17,6 +18,8 @@ header {
 
 main {
     width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
 }
 
 section {
@@ -24,19 +27,23 @@ section {
     box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h2 {
+    margin: 0px;
+}
+
+h1, h2, h3, label {
     font-family: 'Merriweather', serif;
 }
 
-body, p, a, li {
+body, p, a, li, button {
     font-family: 'Montserrat', sans-serif;
 }
 
 .site-footer {
+    height: 5vh;
     background-color: #111;
     color: #ccc;
     text-align: center;
-    padding: 10px 10px;
     font-size: 14px;
     width: 100%;
     box-sizing: border-box;
@@ -47,6 +54,10 @@ body, p, a, li {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+}
+
+.site-footer p {
+    margin: none;
 }
 
 .site-footer a:hover {

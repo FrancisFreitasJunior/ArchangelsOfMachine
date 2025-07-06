@@ -14,11 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
         </nav>
     `;
 
-    // Carrega o conteúdo do header
     const header = document.getElementById('main-header');
     header.innerHTML = headerHTML;
 
-    // Agora sim, adiciona o evento do botão hamburguer
     const toggle = document.getElementById('menu-toggle');
     const navLinks = document.querySelector('.navLinks');
 

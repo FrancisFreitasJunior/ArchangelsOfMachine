@@ -1,10 +1,11 @@
 header {
-    background-color: #000000;
+    background-color: #111;
     padding: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 header nav {
@@ -49,18 +50,16 @@ header nav ul {
     align-items: end;
 }
 
-/* Responsividade para tablets e celulares */
 @media (max-width: 768px) {
 
     header {
         flex-direction: column;
         align-items: flex-start;
-        position: relative; /* necessário para o .navLinks absoluto */
+        position: relative;
     }
 
     header nav {
         padding: 0;
-        margin-top: 12px;
     }
 
     header nav ul {
@@ -79,7 +78,7 @@ header nav ul {
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #000;
+        background-color: #111;
         z-index: 999;
         padding: 12px 0;
         display: none;
@@ -91,6 +90,9 @@ header nav ul {
         pointer-events: none;
         transition: opacity 0.3s ease;
         padding: 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0px 0px 8px 8px;
+        box-shadow: 0 4px 6px -2px rgba(255, 255, 255, 0.25);
     }
 
     .navLinks.show {
