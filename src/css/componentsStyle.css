@@ -38,7 +38,6 @@
 /*Style Card Event*/
 
 .eventos {
-    padding: 0px 20px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -56,7 +55,6 @@
 }
 
 .eventos-grid {
-    padding: 16px;
     max-width: 900px;
     display: grid;
     grid-template-columns: 1fr;
