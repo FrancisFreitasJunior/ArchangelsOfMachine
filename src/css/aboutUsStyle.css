@@ -22,7 +22,7 @@ section {
 
 .container-about-us h2 {
     font-size: 32px;
-    margin-bottom: 20px;
+    margin: 20px 0px;
     text-transform: uppercase;
     text-align: center;
 }
